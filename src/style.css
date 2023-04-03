@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .imgAllClass{
+        @apply  cursor-pointer w-full sm:w-[46%] lg:w-[30%] h-96 border rounded-b-xl border-white text-lg mt-2 flex flex-col justify-between space-y-4 py-3 ;
+    }
+    /* .heading{
+        @apply   sm:text-2xl text-xl font-medium text-white mb-3 ;
+    }
+    .list-box{
+        @apply   flex justify-between flex-col h-full bg-gray-800 bg-opacity-40 px-8 py-12 rounded-lg overflow-hidden text-center relative ;
+    } */
+}
+
+body{
+    background-color: rgb(55, 65, 81);
+}
+.remove-scroll::-webkit-scrollbar{
+display: none;
+}
+.bg-black {
+    background: linear-gradient(to right, #00560d, #002809);
+    
+    -webkit-box-shadow: 5px 4px 31px -9px rgba(245,245,245,1);
+-moz-box-shadow: 5px 4px 31px -9px rgba(245,245,245,1);
+box-shadow: 7px 6px 9px -8px rgb(255, 255, 255);
+}
+
+/* .gradient-day  {
+    background: #374151; 
+    background: -webkit-linear-gradient(to left, #4286f4, #374151);
+      background: linear-gradient(to left, #4286f4, #374151);
+} */
+.gradient-day  {
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #009216, #00280d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00920a, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.dayscroll  {
+    background: #374151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4286f4, #374151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4286f4, #374151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.dayWeatherPhotoOne{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwfNNOhYkSVjMXN08zhyXo3VDkZzLS5Zvdg&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-weight: 500;
+    color: #070404 !important;
+}
+
+.dayWeatherPhotoTwo{
+    background-image: url(https://media.tenor.com/Ha5LxK8qYa8AAAAM/moon-sky.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #000000 !important;
+}
+
+.dayWeatherPhotoThree{
+    background-image: url(https://w0.peakpx.com/wallpaper/279/977/HD-wallpaper-sunny-day-beach-sand-vacation-summer-sunny-sky-sea.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #000000 !important;
+}
+
+.dayWeatherPhotoFour{
+    background-image: url(https://media.tenor.com/sP_dupwb9psAAAAC/night.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #000000 !important;
+}
+
+.dayWeatherPhotoFive{
+    background-image: url(https://media.tenor.com/f14xUacYc1oAAAAd/storm-world-meteorological-day.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-weight: 500;
+    color: #ffffff !important;
+}
+
+.dayWeatherPhotoSix{
+    background-image: url(https://media4.giphy.com/media/BDucPOizdZ5AI/giphy.gif);
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-weight: 500;
+    color: #ffffff !important;
+}
+
+.dayWeatherPhotoSeven{
+    background-image: url(https://j.gifs.com/K1Nvon@facebook.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-weight: 500;
+    color: #ffffff !important;
+}
+
+.dayWeatherPhotoEight{
+    background-image: url(https://media2.giphy.com/media/PbOaO2fedzQLm/giphy.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-weight: 400;
+    color: #ffffff !important;
+}
+
+.dayWeatherPhotoNine{
+    background-image: url(https://i.gifer.com/fzmZ.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #000000 !important;
+}
+
+.dayWeatherPhotoTen{
+    background-image: url(https://img.freepik.com/free-vector/cloud-sticker-clipart-vector-set-flat-design_53876-140219.jpg?w=2000);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #000000 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid{
+    grid-template-columns:repeat(1 , 1fr);
+    grid-template-rows: 8vh 1fr  9rem 1fr;
+}
+.box-1{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+.box-2{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    z-index: 1;
+    height: 9rem;
+}
+
+.box-3{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    /* height: ; */
+}
+.box-4{
+    height: 100vh;
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+}
+
+
+@media (min-width:768px){
+    .grid{
+    grid-template-columns:repeat(4 , 1fr);
+    grid-template-rows: 8vh 500px 50vh;
+}
+.box-1{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+.box-2{
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+    height: 138%;
+}
+
+.box-3{
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+}
+.box-4{
+    height: 200%;
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
+}
+.dayscroll{ background: #004e92;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #009222, #009220);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #009233, #00922e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+
+}
+/* .box-4{
+    background-color: yellow;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+} */
